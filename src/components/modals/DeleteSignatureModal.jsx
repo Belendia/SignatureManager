@@ -7,7 +7,8 @@ const getUserQuery = {
         resource: 'users',
         id: ({ id }) => id,
         params: {
-            fields: 'id,username,firstName,surname,email,userRoles[id],organisationUnits[id],attributeValues'
+            // fields: 'id,username,firstName,surname,email,userRoles[id],organisationUnits[id],attributeValues'
+            fields: ":all"
         }
     }
 };
